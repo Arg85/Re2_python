@@ -1,0 +1,15 @@
+pg=0
+ans=0
+arr=[3,3,5,6,3]
+for i in range(5):
+    que=0
+    pg+=1
+    for j in range(arr[i]):
+        if(que==3):
+            que=0
+            pg+=1
+        que=que+1
+        if(j+1==pg):
+            ans+=1
+print(ans)            
+            
